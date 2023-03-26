@@ -1,0 +1,29 @@
+<!-- <p>user-list works!</p>
+
+<button igxButton="flat">Welcome to User-List Component</button>
+
+<ul>
+  <li *ngFor="let user of userData ? userData : []">
+    name : {{ user.name }} - surname: {{ user.surname }} - email :
+    {{ user.email }} - birthday :
+    {{ user.birthDay | date: "medium":"":"tr-TR" }}
+  </li>
+</ul> -->
+
+<h1>Kullanıcı Listesi</h1>
+
+<div class="row">
+  <div class="col-md-4">
+    <button class="add-button" (click)="addRandomUser()">
+      Rastgele Kullanıcı Ekle
+    </button>
+  </div>
+  <div class="col-md-6">
+    <ul *ngIf="users.length > 0" class="user-list">
+      <li class="user-list-item" *ngFor="let user of users">
+        {{ user.name }}
+      </li>
+    </ul>
+    <h3 *ngIf="users.length === 0">Kullanıcı Listesi Boş</h3>
+  </div>
+</div>

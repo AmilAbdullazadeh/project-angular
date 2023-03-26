@@ -1,0 +1,10 @@
+<div class="row">
+  <h3>Bölgeler</h3>
+  <div class="col-md-12">
+    <ul>
+      <li *ngFor="let city of regionData">
+        {{ city.id }} - {{ city.name }} - {{ city.region }}
+      </li>
+    </ul>
+  </div>
+</div>

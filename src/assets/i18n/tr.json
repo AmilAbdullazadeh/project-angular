@@ -1,0 +1,9 @@
+{
+  "app": {
+    "title": "Bu bir başlıktır."
+  },
+  "toastr": {
+    "title": "Giriş Başarılı!",
+    "message": "Udemy Angular 9 projemize hoşgeldiniz...!"
+  }
+}

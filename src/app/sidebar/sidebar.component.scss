@@ -1,0 +1,10 @@
+#navigation {
+  height: calc(100vh - 4rem);
+}
+
+.sidebar {
+  font-size: 1.1rem;
+  &__item {
+    padding-left: 5%;
+  }
+}

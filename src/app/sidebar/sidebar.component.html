@@ -1,0 +1,40 @@
+<!-- app.component.html -->
+<div class="content-wrap">
+  <igx-nav-drawer id="navigation" #drawer [isOpen]="true">
+    <ng-template igxDrawer>
+      <nav>
+        <span igxDrawerItem [isHeader]="true"> Sidebar Listesi </span>
+        <span igxDrawerItem igxRipple [active]="true" routerLink="home">
+          Home
+        </span>
+        <span igxDrawerItem igxRipple routerLink="role"> Role </span>
+        <span igxDrawerItem igxRipple routerLink="user"> User </span>
+        <span igxDrawerItem igxRipple routerLink="data-binding">
+          Data Binding
+        </span>
+        <span igxDrawerItem igxRipple routerLink="storage"> Storage </span>
+        <span igxDrawerItem igxRipple routerLink="directives">
+          Directives
+        </span>
+        <span igxDrawerItem igxRipple routerLink="pipes">
+          Pipes
+        </span>
+        <span igxDrawerItem igxRipple routerLink="parents">
+          Parents
+        </span>
+        <span igxDrawerItem igxRipple routerLink="forms">
+          Forms
+        </span>
+        <span igxDrawerItem igxRipple routerLink="map">
+          Map
+        </span>
+        <span igxDrawerItem igxRipple routerLink="file-upload">
+          file Upload
+        </span>
+      </nav>
+    </ng-template>
+  </igx-nav-drawer>
+  <main>
+    <!-- app content -->
+  </main>
+</div>

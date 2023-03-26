@@ -1,0 +1,20 @@
+<div class="row" style="margin-top: 6rem !important">
+  <div class="col-md-3">
+    <div class="form-group">
+      <input
+        type="file"
+        #file
+        (change)="handleFileInput($event.target.files)"
+      />
+    </div>
+    <br />
+    <button (click)="uploadFiles()">Resimleri Yükle</button>
+  </div>
+  <div class="col-md-8">
+    <img
+      *ngFor="let image of images"
+      [src]="image.url"
+      style="max-width: 200px !important"
+    />
+  </div>
+</div>

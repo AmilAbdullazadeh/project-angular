@@ -1,0 +1,34 @@
+<div class="row" style="margin: 2rem">
+  <div class="col-md-9 offset-md-3">
+    <form class="form-group" #cityForm="ngForm" (ngSubmit)="save(cityForm)">
+      <div class="row">
+        <div class="col-md-12 form-control">
+          <label for="id">Id</label>
+          <input type="number" name="id" ngModel />
+        </div>
+        <div class="col-md-12">
+          <label for="name">Name</label>
+          <input type="text" name="name" ngModel />
+        </div>
+        <div class="col-md-12">
+          <label for="region">Region</label>
+          <input type="text" name="region" ngModel />
+        </div>
+        <div class="col-md-12">
+          <label for="plaka">Plaka</label>
+          <input type="number" name="plaka" ngModel />
+        </div>
+        <button type="submit">Kaydet</button>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-4">
+    <app-city></app-city>
+  </div>
+  <div class="col-md-4">
+    <app-plaka></app-plaka>
+  </div>
+  <div class="col-md-4">
+    <app-region></app-region>
+  </div>
+</div>

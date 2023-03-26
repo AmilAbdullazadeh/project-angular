@@ -1,0 +1,21 @@
+#toast-container > div {
+  opacity: 1;
+  width: 600px;
+}
+.toast {
+  font-size: initial !important;
+  border: initial !important;
+  backdrop-filter: blur(0) !important;
+}
+.toast-success {
+  background-color: rgb(103, 184, 103) !important;
+}
+.toast-error {
+  background-color: rgb(218, 69, 61) !important;
+}
+.toast-info {
+  background-color: rgb(95, 198, 230) !important;
+}
+.toast-warning {
+  background-color: rgb(236, 166, 67) !important;
+}

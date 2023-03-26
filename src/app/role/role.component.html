@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-9 offset-md-3">
+    <form
+      #roleForm="ngForm"
+      class="form-group"
+      (ngSubmit)="addNewRole(roleForm)"
+    >
+      <label for="name">id</label> <br />
+      <input class="form-control" type="text" name="id" ngModel /> <br />
+      <label for="name">name</label> <br />
+      <input class="form-control" type="text" name="name" ngModel />
+
+      <br />
+
+      <button type="submit">Kaydet</button>
+    </form>
+    <button (click)="editRole(roleForm)">Düzenle</button>
+    <button (click)="deleteRole(roleForm)">Sil</button>
+  </div>
+</div>
+
+<ul>
+  <li *ngFor="let role of rolesData ? rolesData[0]?.data : []">
+    id : {{ role._id }} - name: {{ role.name }}
+  </li>
+</ul>

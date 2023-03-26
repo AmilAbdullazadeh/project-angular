@@ -1,0 +1,28 @@
+<div style="margin: 2rem;">
+  <div class="row">
+    <div class="col-md-3">isim : <input type="text" [(ngModel)]="name" /></div>
+    <div class="col-md-3">
+      başarı durumu :
+      <select [(ngModel)]="successStatus">
+        <option value="0">Seçin</option>
+        <option [ngValue]="true">Başarılı</option>
+        <option [ngValue]="false">Başarısız</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <button (click)="calculate()">Çalıştır</button>
+    </div>
+    <div class="col-md-2">
+      <button (click)="child1.alertSth()">Child Component Trigger</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <app-child1
+        [data]="calculaterData"
+        (resetForm)="resetParentForm($event)"
+      ></app-child1>
+    </div>
+  </div>
+</div>
